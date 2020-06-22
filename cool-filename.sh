@@ -19,4 +19,4 @@ echo "\n"
 # Enable portforwarding
 echo "Turning port-forwarding on"
 echo 1 > /proc/sys/net/ipv4/ip_forward
-ehco "\n"
+echo "\n"
