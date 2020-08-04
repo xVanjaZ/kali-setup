@@ -9,19 +9,19 @@ fi
 # Let's update our system first
 echo "Updating system\n"
 apt update -y && apt upgrade -y && apt dist-upgrade -y && apt autoremove -y
-echo "\n"
 
 # Download wordlists"
 echo "Downloading wordlists\n"
 apt install seclists -y
-echo "\n"
 
 # Install dsniff
 echo "Installing dsniff"
 apt-get install dsniff  -y
-echo "\n"
+
+# Install gobuster
+echo "Installing gobuster"
+apt install gobuster -y
 
 # Enable portforwarding
 echo "Turning port-forwarding on"
 echo 1 > /proc/sys/net/ipv4/ip_forward
-echo "\n"
